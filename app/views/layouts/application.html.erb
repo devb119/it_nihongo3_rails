@@ -14,7 +14,6 @@
       <p>こんにちは、<%= current_user.email %></p>
       <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
       <br>
-      <a href="/books">本一覧を見る</a>
     <% else %>
       <%= link_to "サインイン", new_user_session_path %>
       <%= link_to "ユーザー登録", new_user_registration_path %>
