@@ -1,6 +1,12 @@
 <h1>プロファイル</h1>
+
+<% if current_user.avatar.attached? %>
+  <%= image_tag current_user.avatar %>
+<% end %>
+
 <h3>メールアドレス</h3>
 <%= current_user.email %>
+
 <h3>名前</h3>
 <%= current_user.name %>
 
